@@ -18,6 +18,7 @@ def download_video_segment(video_id):
   print(f"download_video_segment:'{url}'")
   
   yt = YouTube(url, on_progress_callback = on_progress, use_po_token=True)
+  yt = YouTube(url, on_progress_callback = on_progress, use_po_token=True)
   #print(f"title:'{yt.title}'")
 
   ys = yt.streams.get_highest_resolution()
