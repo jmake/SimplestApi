@@ -26,9 +26,8 @@ jobs:
     - name: Create credentials file
       run: |
         ## settings/secrets/actions 
-        ## cat credentials.json | base64 
-        echo "${{ secrets.GOOGLE_CREDENTIALS }}" > credentials.json
-        ## echo "${{ secrets.GOOGLE_CREDENTIALS }}" | base64 --decode > credentials.json
+        ## echo "${{ secrets.GOOGLE_CREDENTIALS }}" > credentials.json
+        echo "${{ secrets.GOOGLE_CREDENTIALS }}" | base64 --decode > credentials.json
 
     - name: Run your script
       run: python Colab/downloader.py
