@@ -1,3 +1,4 @@
 Flask
 pytubefix
+nodejs-bin[cmd]
 #opencv-python
