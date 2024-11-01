@@ -26,7 +26,10 @@ jobs:
     - name: Create credentials file
       run: |
         ## settings/secrets/actions 
-        echo "${{ secrets.GOOGLE_CREDENTIALS }}" > credentials.json
+        ## cat credentials.json | base64 
+        ## echo "${{ secrets.GOOGLE_CREDENTIALS }}" > credentials.json
+        echo "${{ secrets.GOOGLE_CREDENTIALS }}" | base64 --decode > credentials.json
+
 
         cat credentials.json
 
