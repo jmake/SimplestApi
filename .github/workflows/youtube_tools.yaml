@@ -27,10 +27,12 @@ jobs:
 
 
       - run : |
-          git clone https://github.com/YunzheZJU/youtube-po-token-generator.git  
+          #git clone https://github.com/YunzheZJU/youtube-po-token-generator.git  
 
-          npm install jsdom
-          node youtube-po-token-generator/examples/one-shot.js
+          #npm install jsdom
+          #node youtube-po-token-generator/examples/one-shot.js
+
+          bash RUNNER.sh 
 
 
       - run : |
