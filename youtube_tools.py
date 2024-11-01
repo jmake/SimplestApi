@@ -20,8 +20,8 @@ def download_video_segment(video_id):
   yt = YouTube(url, on_progress_callback = on_progress, use_po_token=True)
   print(f"title:'{yt.title}'")
 
-  ys = yt.streams.get_highest_resolution()
-  ys.download(filename="temp_video.mp4")
+  #ys = yt.streams.get_highest_resolution()
+  #ys.download(filename="temp_video.mp4")
   
   #list_directory( os.getcwd() )
   
