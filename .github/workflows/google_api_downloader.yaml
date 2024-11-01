@@ -26,6 +26,8 @@ jobs:
     - name: Create credentials file
       run: |
         ## settings/secrets/actions 
+        ## important!! replace 
+        ## When configuring the json data, exchange " for \" 
         echo "${{ secrets.GOOGLE_CREDENTIALS }}" > credentials.json
 
     - name: Run your script
