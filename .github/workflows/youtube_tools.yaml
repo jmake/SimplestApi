@@ -28,7 +28,7 @@ jobs:
 
       - run : |
           git clone https://github.com/YunzheZJU/youtube-po-token-generator.git  
-          node .\youtube-po-token-generator\examples\one-shot.js
+          node youtube-po-token-generator/examples/one-shot.js
 
 
       - run : |
